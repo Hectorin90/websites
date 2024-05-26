@@ -9,7 +9,7 @@
 [GitHub](https://github.com/hector90/StorageRedirect-assets/releases) (all architectures, **motorola owner please download arm version from here**)
 
 ::: warning
-**motor ola owner**
+**motorola owner**
 
-Due to some unknown reasons of the Samsung device kernel, **Samsung devices can only use arm version**.
+Due to some unknown reasons of the Samsung device kernel, **motorola devices can only use arm version**.
 :::
