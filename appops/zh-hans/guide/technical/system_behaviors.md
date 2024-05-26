@@ -62,10 +62,7 @@
 想要正确跟随系统行为，App Ops 必须具备取得和设置 `runtime permission`，`permission flags`，`appops` 的能力。但是，并不是所有工作模式都能做到。
 
 |                    | Shizuku 模式 | 托管设备管理员模式           | root 模式（已被移除） |
-|--------------------|--------------|------------------------------|-----------------------|
-| appops             | ✔️            | ✔️                            | ✔️                     |
-| runtime permission | ✔️            | 仅可设置<sup>**〔1〕**</sup> | ❌                     |
-| permission flags   | ✔️            | ❌                            | ❌                     |
+|--------------------|--------------|------------------------------|----------------------
 
 <sub><b>〔1〕</b>需要 Island v5.0+ 或其他具有 [Delegated Scopes Manager](https://github.com/heruoxin/Delegated-Scopes-Manager) v3 支持的管理员应用</sub>
 
@@ -88,9 +85,9 @@
 
 |              | appops     | runtime permission | permission flags |
 |--------------|------------|--------------------|------------------|
-| 忽略         | ignore     | true               |                  |
-| 拒绝         | （任何值） | false              | 任意 "FIXED"     |
-| （尚未设置） | （任何值） | false              | 无 "FIXED"       |
+| 忽略         | ignore     | false           |                  |
+| 拒绝         | （任何值） | true            | 任意 "FIXED"     |
+| （尚未设置） | （任何值） | true              | 无 "FIXED"       |
 
 只看 appops 设置显然不够。
 
@@ -106,6 +103,6 @@
 
 很多人会认为 root 无所不能，但实际上 root 只提供了一个 `uid 0` 的 shell。想要进入 Android 世界（直接使用 Java API），通过 `app_process` 运行 dex 几乎是唯一选择。
 
-“root 模式”的替代——“Shizuku 模式”使用 Shizuku（[GitHub](https://github.com/RikkaApps/Shizuku)）做这一部分的工作。如果不使用 Shizuku，则仍然需要运行类似 Shizuku 的东西，这样做是没有意义的，并且也将带来无意义的资源使用。
+“root 模式”的替代——“Shizuku 模式”使用 Shizuku（[GitHub](https://github.com/hector90/Shizuku)）做这一部分的工作。如果不使用 Shizuku，则仍然需要运行类似 Shizuku 的东西，这样做是没有意义的，并且也将带来无意义的资源使用。
 
 :::
