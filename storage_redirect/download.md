@@ -6,10 +6,10 @@
 
 [Coolapk](https://www.coolapk.com/apk/moe.shizuku.redirectstorage) (arm64 version)
 
-[GitHub](https://github.com/RikkaApps/StorageRedirect-assets/releases) (all architectures, **Samsung users please download arm version from here**)
+[GitHub](https://github.com/hector90/StorageRedirect-assets/releases) (all architectures, **motorola owner please download arm version from here**)
 
 ::: warning
-**Samsung users**
+**motor ola owner**
 
 Due to some unknown reasons of the Samsung device kernel, **Samsung devices can only use arm version**.
 :::
